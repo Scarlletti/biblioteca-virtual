@@ -1,6 +1,6 @@
 ## Biblioteca Virtual 📚
 
-Um CRUD completo para gerenciar sua biblioteca virtual. O projeto conta com uma API em Node.js + MongoDB para persistência dos dados e uma interface em HTML, CSS e JavaScript para interação. Você pode cadastrar livros com nome, autor, gênero e status de leitura, além de editar, listar e excluir.
+Um CRUD completo para gerenciar sua biblioteca virtual. O projeto conta com uma API em Node.js + MongoDB para persistência dos dados e uma interface em Vue.js para interação. Você pode cadastrar livros com nome, autor, gênero e status de leitura, além de editar, listar e excluir.
 
 ---
 
@@ -29,18 +29,23 @@ Um CRUD completo para gerenciar sua biblioteca virtual. O projeto conta com uma 
 ```plaintext
 
 biblioteca-virtual-crud/
-│── frontend/
-│   ├── index.html       # Estrutura da interface
-│   ├── style.css        # Estilização do projeto
-│   └── script.js        # Lógica do CRUD no frontend
+│── biblioteca/ (Vue.js)
+│   ├── public/          # Arquivos públicos
+│   ├── src/
+│   │   ├── components/  # Componentes Vue (LivroForm.vue, LivroList.vue, etc.)
+│   │   ├── views/       # Páginas principais
+│   │   ├── App.vue      # Componente raiz
+│   │   └── main.js      # Configuração inicial do Vue
+│   └── package.json     # Dependências do frontend
 │
-│── backend/
-│   ├── server.js        # Configuração do servidor Node.js/Express
-│   ├── routes.js        # Rotas da API
+│── API-Biblioteca/ (Node.js + Express)
+│   ├── server.js        # Configuração do servidor
+│   ├── routes/          # Rotas da API
 │   ├── models/          # Schemas do MongoDB
 │   └── controllers/     # Lógica das operações da API
 │
-└── README.md            # Documentação do projeto
+└── README.md
+
 
 ```
 
@@ -50,11 +55,9 @@ biblioteca-virtual-crud/
 
 # Frontend:
 
-- HTML5
+- Vue.js
 
-- CSS3
-
-- JavaScript (Vanilla JS)
+- Tailwind CSS
 
 # Backend:
 
@@ -69,13 +72,13 @@ biblioteca-virtual-crud/
 ## 🌐 API Endpoints
 
 ```plaintext
-| Método | Rota          | Descrição                        |
-| ------ | ------------- | -------------------------------- |
-| GET    | `/livros`     | Lista todos os livros            |
-| POST   | `/livros`     | Adiciona um novo livro           |
-| PUT    | `/livros/:id` | Atualiza informações de um livro |
-| DELETE | `/livros/:id` | Remove um livro da biblioteca    |
+| Método | Rota                   | Descrição                        |
+| ------ | ---------------------- | -------------------------------- |
+| GET    | `/livros`              | Lista todos os livros            |
+| POST   | `/criarLivros`         | Adiciona um novo livro           |
+| PUT    | `/atualizarLivros/:id` | Atualiza informações de um livro |
+| DELETE | `/deletarLivros/:id`   | Remove um livro da biblioteca    |
 
 ```
 
----
+--... (NaN KB restante(s))
