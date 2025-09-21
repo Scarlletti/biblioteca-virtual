@@ -1,6 +1,6 @@
 ## Biblioteca Virtual 📚
 
-Um CRUD completo para gerenciar sua biblioteca virtual. O projeto conta com uma API em Node.js + MongoDB para persistência dos dados e uma interface em Vue.js para interação. Você pode cadastrar livros com nome, autor, gênero e status de leitura, além de editar, listar e excluir.
+Um CRUD completo para gerenciar sua biblioteca virtual. O projeto conta com uma API em Node.js + MongoDB para persistência dos dados e uma interface em Vue.js e Tailwind CSS para interação. Você pode cadastrar livros com nome, autor, gênero e status de leitura, além de editar, listar e excluir.
 
 ---
 
@@ -32,7 +32,7 @@ biblioteca-virtual-crud/
 │── biblioteca/ (Vue.js)
 │   ├── public/          # Arquivos públicos
 │   ├── src/
-│   │   ├── components/  # Componentes Vue (LivroForm.vue, LivroList.vue, etc.)
+│   │   ├── components/  # Componentes Vue
 │   │   ├── views/       # Páginas principais
 │   │   ├── App.vue      # Componente raiz
 │   │   └── main.js      # Configuração inicial do Vue
@@ -81,4 +81,3 @@ biblioteca-virtual-crud/
 
 ```
 
---... (NaN KB restante(s))
